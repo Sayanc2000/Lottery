@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const provider = new HDWalletProvider(
     process.env.PHRASE,
-    'https://sepolia.infura.io/v3/d496cb87d5f84a4fb7d0aa60514342d5'
+    process.env.INFURA_DEPLOY_URL
 )
 const web3 = new Web3(provider)
 
